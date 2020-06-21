@@ -6,7 +6,10 @@
 body {
   font-family: 'Helvetica Neue', serif;
   padding-top: 54px;
-  color: #868e96; }
+  color: #868e96; 
+  width:960px;
+}
+
 
 @media (min-width: 992px) {
   body {
@@ -118,3 +121,4 @@ a {
   color: #BD5D38; }
   a:hover, a:focus, a:active {
     color: #824027; }
+
