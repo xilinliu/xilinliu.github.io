@@ -25,7 +25,7 @@
       <hr>
       <div class="row">
         <div class="col-6">
-          <a href="index.html" style="color:#000000;"><h1>Team</h1></a>
+          <h1>Summer Research Openings</h1>
         </div>
         <!--<div class="col-6"> -->
           <!--<p class="text-right"><a href="https://scholar.google.com/citations?user=xkQM_9UAAAAJ&hl=en">[Google Scholar]</a>&nbsp; <a href="https://www.researchgate.net/profile/Xilin_Liu2">[ResearchGate]&nbsp;</a>			<a href="mailto:xilinl.upenn@gmail.com">[Email]</a> </p> -->
@@ -52,40 +52,101 @@
 		
 		<div class="media-body">
 
-		<hr><h4>Principal Investigator</h4>
-		<div>
-			<picture>
-				<img width="150" src="./img/profile_square.jpg" alt="photo_xl" class="justify-content-center img-fluid">
-			</picture>
-		</div>
-			<p><a href="index.html" style="font-size:18px;font-weight:500">Xilin Liu, Assistant Professor</a>	<br>
-			Department of Electical and Computer Engineering, <br>
-			University of Toronto</p>
+		<hr><h4>Design of a Portable Energy Harvesting Module</h4>
+			<p>Advances in electronic designs significantly reduce the power consumption of electronics, which is especially important to extend the battery life of wearable devices, such as smart watches. In this project, we aim to develop a module that can harvest energy from the environment to power a wearable device, which can help reduce the battery recharging frequency and eventually may eliminate the batteries. The energy sources can be body motion, body temperature, radio frequency signal from the environment, or a combination of them. The design target is to provide 1~10mA power at a supply voltage of 3.3V. The design will be using off-the-shelf IC for energy harvesting. 
+      </p>
 
-
-        <p><strong>I have opennings for Ph.D. and M.A.Sc students in Fall 2022 with focus on integrated circuits (IC) design. Please contact me if you are interested in applying.</strong> </p>
-        
-					
+      <b>More reading:</b><br>
+      Energy Harvesting for Self-Sustainable Wireless Body Area Networks<br>
+      https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7914600<br>
+      <br>
+      <b>Requirements:</b><br>
+      Experience in electronic circuit design using integrated circuits chips<br>
+      Experience in PCB design <br>
+      Knowledge of electromagnetic waves is helpful<br>
+      <br>
+      <b>Examples of Energy Harvesting Chips:</b><br>
+      LTC3588 (This is a piezoelectric energy harvesting chip)<br>
+      https://www.analog.com/en/products/ltc3588-1.html<br>
+      P2110B (This is a radio frequency energy harvesting chip)<br>
+      https://www.powercastco.com/wp-content/uploads/2016/10/P2110B-Datasheet-Rev-3.pdf<br>
+      <br>
 
 		</div>		
 
 		<div class="media-body">
 
-		<hr><h4>Current Team Members</h4>
-		<p>To be added. </p>			
-		
+		<hr><h4>Design of a Neural Stimulator with a High Compliance Voltage</h4>
+		<p>Neural stimulator is a type of medical device that can be used for modulating neural activities and treating neurological disorders. Non-invasive neural stimulators are also used for neurorehabilitation after traumatic brain injuries or spinal cord injuries. The most commonly used type of electronic neural stimulator employs current-mode drivers. Current-mode stimulation can achieve high electronic charge precision independent of the load impedance, resulting in minimal tissue damage due to residual charges. In this project, we aim to develop a current-mode stimulator that supports a compliance voltage of +/-20V with programmable current amplitude, pulse width, and frequency. The current-mode stimulator driver will be built using off-the-shelf high voltage operational amplifiers. A Howland current source architecture will be used. A microcontroller (nRF5340) will be used for controlling the stimulator. </p>			
+    
+		<b>More reading:</b><br>
+    Electronic Neural Interface<br>
+    https://www.eecg.utoronto.ca/~xilinliu/pdfs/2020_Electronic%20neural%20interfaces.pdf<br>
+    Design of Efficient and Safe Neural Stimulators<br>
+    https://link.springer.com/content/pdf/10.1007%2F978-3-319-28131-5.pdf<br>
+    <br>
+    <b>More reading about Howland Current source</b><br>
+    https://www.ti.com/lit/pdf/snoa474<br>
+    <br>
+    <b>Requirements:</b><br>
+    Experience in electronic circuits design using integrated circuits chips (such as operational amplifiers)<br>
+    Experience in PCB design<br>
+    Experience in MCU (such as Arduino) programming<br>
 		<br>
 			
-		<hr><h4>Lab Alumni</h4>
-		<p>To be added. </p>			
+    <b>MCU Platforms:</b><br>
+    nRF5340 DK using Arm® Cortex®-M33 processors<br>
+    https://www.nordicsemi.com/Products/Development-hardware/nRF5340-DK<br>
+
+    Arduino Nano 33 BLE Sense using nRF52840 ARM® Cortex™-M4 CPU<br>
+    https://store-usa.arduino.cc/products/arduino-nano-33-ble-sense<br><br>
+
+
+
+
+		<hr><h4>Design of a High-Speed Digital Neural Interface using FPGA</h4>
+		<p>Large-scale neural recording revolutionizes our understanding of the nervous system and provides unprecedented tools for diagnosing and treating neurological diseases. Miniature neural recording headstage provides an opportunity to record neural activities from invasive electrodes implanted in animal models. In this project, we will develop Verilog codes for using FPGA to interface with a commercial neural interface chip, RHS2116, from Intan Technologies. We will be reading neural signals from 16 channels with over 20KSps per channel and transferring the data to a host computer. A graphic user interface will be developed on a computer for displaying the recorded data in real-time (like an oscilloscope for the brains).</p>  
+
+    <b>More reading:</b><br>
+    Electronic Neural Interface<br>
+    https://www.eecg.utoronto.ca/~xilinliu/pdfs/2020_Electronic%20neural%20interfaces.pdf<br><br>
+
+    <b>About the commercial neural recording chip</b><br>
+    https://intantech.com/<br>
+    Example codes are available here:<br>
+    https://intantech.com/files/RHD2000InterfaceXEM6310_release_180202.zip<br><br>
+
+    <b>Requirements:</b><br>
+    Experience in FPGA and Verilog is required<br>
+    Experience in developing PC graphic interface is helpful<br><br>
+
+    <b>FPGA Platforms:</b><br>
+    ZedBoard using Xilinx Zynq®-7000 All Programmable SoC<br>
+    https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/zedboard/<br>
+    XEM7310 using Xilinx Artix-7 FPGA<br>
+    https://opalkelly.com/products/xem7310/<br>
+ 		
 				
 		<br>
 			
-		<hr><h4>Research Collaborators</h4>			
-		<p>To be added. </p>				
-			
-		<br>	
-		  
+		<hr><h4>Design of an Ultra-Wideband Wireless Transceiver Module</h4>			
+		<p>Recording brain signals from a large number of channels requires a high-speed wireless data link. Unfortunately, conventional wireless transceivers are either too slow (such as Bluetooth or Zigbee) or too power-hungry (such as Wifi). In this project, we aim to develop a low-power wireless module to achieve high-speed data transmission. We will be using a commercial Ultra-Wideband (UWB) Impulse Radio Transceiver Module, such as the SR1020 from Spark Microsystems (around 6GHz ~ 9.3GHz). https://www.sparkmicro.com/products/. By the end of this project, we aim to have a custom PCB that integrates the UWB chip with a SPI interface to an MCU. </p>				
+
+    <b>More reading:</b><br>
+    A Gentle Introduction to Ultra-wide Band (UWB) Radio Technology<br>
+    https://www.suncam.com/miva/downloads/docs/094.pdf<br>
+    <br>
+    <b>Requirements:</b><br>
+    Knowledge of Electromagnetic waves, radio-frequency circuits are required<br>
+    Experience in advanced electronic circuits design for radio-frequency operation<br>
+    Experience in MCU programming is helpful<br>
+
+		<br>			  
+    <hr><h4>More to be added</h4>     
+    <p>Updated on 02/27/2022</p>              
+    <br>
+
+
 <!--
       <hr>
       <h2>Work Experience</h2>
