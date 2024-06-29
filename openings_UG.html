@@ -57,7 +57,7 @@
 
 
     <hr><h6><b>Instructions</h6></b>
-    The projects listed in the page are potential topics for ECE/EngSci thesis, part-time research assistant, and summer interns. (updated 02/2023)<br>
+    The projects listed in the page are potential topics for EngSci/ECE thesis, part-time research assistant, and summer interns. (updated 06/2024)<br>
     If you are interested in applying for these positions listed below, please email the following materials to Prof. Xilin Liu at xilinliu <b>at</b> ece <b>dot</b> utoronto <b>dot</b> ca:<br>
     1. A cover letter stating the project(s) that you are interested in and the relevant experience and qualification (for the required knowledge background and skillsets)<br>
     2. Latest CV<br>
@@ -65,33 +65,59 @@
     <br>
 
 
-    <hr><h6><b>Project #1: Analog and Mixed-Signal Integrated Circuits Design</h6></b>
-
-Integrated circuit (IC) technology is the core of modem electronics. Our team develops high-performance, energy-efficient analog and mixed-signal IC blocks for wireless and wireline communication, as well as high-precision instrumentation. We are looking for research assistants to work on our team to develop IC blocks, such as analog-to-digital converters (ADCs), digital-to-analog converters (DACs), clock generation circuits, and power management circuits. <br><br>
-
-During the research, students will join the IC development phases, such as modeling, design, simulation, layout, or testing, depending on the status of the ongoing projects. Modeling will be performed using Matlab/Simulink, and the IC design and stimulation will be done through Cadence Virtuoso. We use CMOS processes including GlobalFoundries 22nm and TSMC 65nm technology. Students with experience in using Cadence for simulation are especially encouraged to apply.<br><br>
-
-<b>Requirements:</b><br>
-- Knowledge in analog electronics (ECE331, ECE430, ECE412, or equivalent)<br>
-- Experience in using Cadence for IC design and simulation <br>
-- Experience in using Matlab<br>
-<br>
 
 
-    <hr><h6><b>Project #2: Design of an Open-Source Microelectrode Array for Neural Interfacing</h6></b>
-    Reading materials: <a href="https://www.biorxiv.org/content/10.1101/2022.11.11.516234v1">OpenMEA</a><br>
-    More details to be added.<br>
-    <br>
+    <hr><h6><b>Project #1: Machine learning for Seizure Prediction</h6></b>
+
+    In Canada, approximately 1 in 100 people live with epilepsy, which amounts to nearly 300,000 Canadians. The condition affects individuals across all age groups, with 13% being children and youth (aged 1-19 years), 63% adults (aged 20-64 years), and 24% older adults (aged 65 and older). A primary symptom of epilepsy is seizures, which are uncontrolled electrical disturbances in the brain that lead to changes in movement and consciousness. Detecting and predicting seizures in advance allows for medical interventions, such as real-time closed-loop electrical stimulation, which can significantly reduce symptoms and improve patients' quality of life.<br><br>
+
+    Our team develops wearable devices for detecting and predicting seizures. Unlike conventional methods that require invasive EEG signal recording, our approach focuses on developing seizure prediction algorithms using surface EEG signals collected from wearable devices positioned behind the ears, allowing for comfortable long-term use. Through collaboration with clinicians, we have successfully recorded behind ear EEG data from several epileptic patients.<br><br>
+
+    In this project, the student is expected to develop a machine learning model to predict the onset of seizures from the recorded behind ear EEG data. The design target is to achieve high sensitivity, a low false positive rate, and an accurate prediction window. <br><br>
+
 
     <b>Requirements:</b><br>
-    Experience in FPGA and Verilog is required<br>
-    Experience in PCB design and system integration is required<br><br>
+    - Knowledge and experience of machine learning<br>
+    - Programming and data handling skills <br>
+    - Domain specific knowledge in neurosience is NOT required<br>
+    <br>
 
 
 
-    <hr><h6><b>Project #3: Design of a High-Speed Digital Neural Interface using FPGA</h6></b>
-    <p>Large-scale neural recording revolutionizes our understanding of the nervous system and provides unprecedented tools for diagnosing and treating neurological diseases. Miniature neural recording headstage provides an opportunity to record neural activities from invasive electrodes implanted in animal models. In this project, we will develop Verilog codes for using FPGA to interface with a commercial neural interface chip, RHS2116, from Intan Technologies. We will be reading neural signals from 16 channels with over 20KSps per channel and transferring the data to a host computer. A graphic user interface will be developed on a computer for displaying the recorded data in real-time (like an oscilloscope for the brains).</p>  
 
+
+    <hr><h6><b>Project #2: Multi-channel Neural stimulator design in 180nm CMOS</h6></b>
+    <p>Implantable neural interfacing technologies, especially electrical neural stimulators, are crucial for treating neurological disorders by directly modulating nerve activity, thereby restoring functions such as movement, sensation, and pain control in patients with conditions like Parkinson's disease, epilepsy, and spinal cord injuries. These technologies offer targeted and adjustable interventions, enhancing patients' quality of life and enabling precise medical treatments that were previously unattainable. </p>  
+
+    A primary concern in the design of invasive neural stimulators is safety, as residual charge can lead to tissue damage and electrode dissolution. Consequently, achieving charge balance is essential in electronic circuit design. The current mode stimulator is frequently utilized for this purpose. An ideal current mode stimulator can regulate the amount of charge irrespective of the load impedance. Such a stimulator requires a current source with high output impedance and precise current accuracy, ensuring minimal mismatches between channels.<br><br>
+
+    In this project, the student is expected to design a neural stimulator using CMOS circuits with the 180nm PDK from TSMC. The student will engage in circuit design, simulation, layout, and post-layout verification, with the chip being taped out through the MPW service. <br><br>
+
+    <b>Requirements:</b><br>
+    - Knowledge of analog and digital electronics <br>
+    - Experience in circuit design and layout <br>
+    - Skills in using Cadence Virtuoso <br>
+    <br>
+
+
+
+            
+    <hr><h6><b>Project #3: Real-time Wireless Brain-Machine Interfaces (Open Topic)</b></h6> 
+    <p>Research in brain-machine interface (BMI) technology has the potential to revolutionize how we interact with the world, offering significant advancements in healthcare, accessibility, and human-computer interaction. Wearable BMIs can provide non-invasive, continuous monitoring and control, enabling real-time applications in prosthetics, rehabilitation, and assistive technologies for individuals with disabilities. Moreover, these advancements could lead to innovations in augmented reality, gaming, and communication, enhancing everyday life and expanding the possibilities of human-machine integration. The portability and ease of use of wearable BMIs make them a practical and scalable solution for widespread adoption.</p>    
+
+    In this project, the student will be provided with a custom wireless EEG recording device developed in our lab. This EEG device streams recorded scalp EEG signals to a computer, where they are processed in a framework programmed in Python. The student is expected to propose a method to use the BMI device to control something in real time, such as robotics, electric model cars, or computer programs. To achieve this goal, the student will develop signal processing and machine learning models for real-time operation. The student is expected to collect data themselves for training the model and eventually demonstrate the system in real-time.<br><br>    
+
+    
+    <b>Requirements:</b><br>
+    - Knowledge of signal processing and machine learning<br>
+    - Skills in programming<br>
+    <br>
+
+
+
+
+
+<!--
     <b>More reading:</b><br>
     Electronic Neural Interface<br>
     https://www.eecg.utoronto.ca/~xilinliu/pdfs/2020_Electronic%20neural%20interfaces.pdf<br><br>
@@ -111,6 +137,20 @@ During the research, students will join the IC development phases, such as model
     XEM7310 using Xilinx Artix-7 FPGA<br>
     https://opalkelly.com/products/xem7310/<br>
     <br>
+
+
+
+
+    <hr><h6><b>Project #2: Design of an Open-Source Microelectrode Array for Neural Interfacing</h6></b>
+    Reading materials: <a href="https://www.biorxiv.org/content/10.1101/2022.11.11.516234v1">OpenMEA</a><br>
+    More details to be added.<br>
+    <br>
+
+    <b>Requirements:</b><br>
+    Experience in FPGA and Verilog is required<br>
+    Experience in PCB design and system integration is required<br><br>
+
+
 
 <div class="media-body">
 
@@ -167,7 +207,7 @@ During the research, students will join the IC development phases, such as model
 -->
  		
 						
-		<hr><h6><b>Project #5: Design of an Ultra-Wideband Wireless Transceiver Module</b></h6>	
+		<hr><h6><b>Project #4: Design of an Ultra-Wideband Wireless Transceiver Module</b></h6>	
 		<p>Recording brain signals from a large number of channels requires a high-speed wireless data link. Unfortunately, conventional wireless transceivers are either too slow (such as Bluetooth or Zigbee) or too power-hungry (such as Wifi). In this project, we aim to develop a low-power wireless module to achieve high-speed data transmission. We will be using a commercial Ultra-Wideband (UWB) Impulse Radio Transceiver Module, such as the SR1020 from Spark Microsystems (around 6GHz ~ 9.3GHz). https://www.sparkmicro.com/products/. By the end of this project, we aim to have a custom PCB that integrates the UWB chip with a SPI interface to an MCU. </p>				
 
     <b>More reading:</b><br>
@@ -191,7 +231,7 @@ During the research, students will join the IC development phases, such as model
 
 		<br>			  
     <hr><h6><b>More to be added</b></h6>     
-    <p>Updated on 02/26/2023</p>              
+    <p>Updated on 06/28/2024</p>              
     <br>
 
 
